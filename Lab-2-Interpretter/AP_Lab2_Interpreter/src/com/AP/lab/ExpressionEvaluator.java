@@ -1,5 +1,8 @@
 /*
- * Expression Evaluator Class - open source ()
+ * Expression Evaluator Class - open source
+ * to evaluate the expression result. Expression will be passed after extracting from
+ * the statement. usually on left hand side. Case # 3
+ * 
  * originally Authored by Udo Klimaschewski 
  * Enhanced for adding compatibility to my program by Shumail Mohyuddin
  */

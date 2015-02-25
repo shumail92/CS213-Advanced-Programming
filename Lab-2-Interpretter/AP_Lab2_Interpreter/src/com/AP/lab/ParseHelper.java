@@ -1,12 +1,14 @@
 /*
- * TODO: 	contains =  in let case
- * 			expression evaluator for floats 
- * 			check if valid expressions after replacing (loop each and compare)
+ * Advanced Programming
+ * Lab # 2
+ * Interpreter
  * 
- * strings manipulation
- * custom assert - break if any syntax error in format)
- * exp evaluation for other float/string as well
+ * by Shumail Mohy-ud-Din
+ * BSCS-2B - 01947
  * 
+ */
+
+/*
  * Assumptions:
  *  - Variable must be declared before use
  */
@@ -26,7 +28,7 @@ public class ParseHelper {
 	public int VARIABLE_TYPE_FLOAT = 2;
 	public int VARIABLE_TYPE_STRING = 3;
 
-	//Hast table to store variables - Generic
+	//Hash table to store variables - Generic
 	Hashtable<String, Variable> VARIABLES_HASHTABLE = new Hashtable<String, Variable> ();
 	
 	public void parse(BufferedReader br) {

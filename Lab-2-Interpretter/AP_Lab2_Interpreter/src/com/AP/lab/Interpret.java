@@ -1,3 +1,12 @@
+/*
+ * Advanced Programming
+ * Lab # 2
+ * Interpreter
+ * 
+ * by Shumail Mohy-ud-Din
+ * BSCS-2B - 01947
+ * 
+ */
 package com.AP.lab;
 
 import java.io.BufferedReader;
