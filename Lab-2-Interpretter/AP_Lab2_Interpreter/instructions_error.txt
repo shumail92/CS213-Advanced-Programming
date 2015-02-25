@@ -1,0 +1,8 @@
+Let x = 1
+Let y = 5.2
+y = y + 2
+y = p + 2
+print x
+print y
+print z
+Let v

@@ -1,0 +1,7 @@
+Let x = 1
+Let y = 5.2
+y = y + 2
+print x
+print y
+Let a = "Shumail"
+print a 
