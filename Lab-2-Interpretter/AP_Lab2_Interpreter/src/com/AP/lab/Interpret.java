@@ -40,7 +40,7 @@ public class Interpret {
 	
 public static void read_file() {
 				
-		try(BufferedReader br = new BufferedReader(new FileReader("instructions.txt"))) {
+		try(BufferedReader br = new BufferedReader(new FileReader("instructions_error.txt"))) {
 			
 			if(br != null) {
 				ParseHelper helper = new ParseHelper();
