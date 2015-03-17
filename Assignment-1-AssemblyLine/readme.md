@@ -1,6 +1,6 @@
-Assembly Line Problem
-Shumail Mohy-ud-Din 
-BSCS-2B | 01947
+#Assembly Line Problem
+##Shumail Mohy-ud-Din 
+##BSCS-2B | 01947
 
 GitHub Link: 
 https://github.com/shumail92/CS213-Advanced-Programming/tree/master/Assignment-1-AssemblyLine
@@ -11,7 +11,7 @@ I have implemented Fastest Way Algorithm to solve the assembly line problem here
 
 The file AssemblyLine.java in package com.AP_Assign1.src is the primary file with implementation of fastest way algorithm in method fastestWayAssemblyLine(). The other method in class displaySolution() is for displaying the solution.
 
-Testing:
+#Testing:
 
 The other file AssemblyLineProblemTest.java in package com.AP_Assign1.test is the Junit test case for testing the implementation. It’s tested against different set of inputs to ensure that my implementation is correct and complete. 
 
