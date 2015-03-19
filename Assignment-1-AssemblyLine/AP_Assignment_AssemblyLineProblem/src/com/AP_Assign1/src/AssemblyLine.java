@@ -14,6 +14,8 @@ package com.AP_Assign1.src;
 
 public class AssemblyLine {
 	
+	private static int stationWiseCost[];
+	
 /*
  * Implementation of FastestWay Algorithm for solving Assembly Line Problem
  * lineEntryTimes array contains the entry times for assembly lines
@@ -25,6 +27,8 @@ public class AssemblyLine {
 	
 	/*fastestWayAssemblyLine => implementation of FastestWay */
 	public static int fastestWayAssemblyLine(int lineEntryTimes[], int processingTimesp[][], int lineExitTimes[],  int transferTime[][], int numberOfStations)throws IllegalArgumentException {
+		
+		stationWiseCost = new int [numberOfStations];
 		
 		/* check if length(entry time) == length(exit time) */
 		if(lineEntryTimes.length != lineExitTimes.length) throw new IllegalArgumentException("Error: length(entry time) != length(exit time)");
@@ -42,15 +46,14 @@ public class AssemblyLine {
 			fCost[i][0] = lineEntryTimes[i]+processingTimesp[i][0];
 		}
 		
-		
-		/* Select minimum and for sub-problems, we'll be having the alraed optimal solution */
+		/* Select minimum and for sub-problems, we'll be having the already optimal solution */
 
 		for (int j = 1; j < numberOfStations; j++) {
 			
 			/* check for minimum - taking into account the previous one.
 			 * either it will be on the same line
 			 * or it'd be on other line.
-			 * in case of other line we'll also cosider the switcing time
+			 * in case of other line we'll also consider the switching time
 			 */
 			
 			if((fCost[0][j-1] + processingTimesp[0][j]) <= (fCost[1][j-1]+ transferTime[1][j-1]+processingTimesp[0][j])){
@@ -98,7 +101,7 @@ public class AssemblyLine {
 		
 		System.out.println("--Minimum Cost for problem: "+ finalCostOfFastestWay);
 		
-		//pritning stations and lines for final solution
+		//printing stations and lines for final solution
 		for(int f=1; f <= n; f++) {
 			System.out.println("Line: " + temp[f] + " -- Station: " + f);
 		}
