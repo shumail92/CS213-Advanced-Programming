@@ -200,6 +200,10 @@ public class WebServer extends Thread {
 		
 		System.out.println("HTTP/1.1 " + statusCode);
 		
+		if (statusCode == 500) {
+			statusLine = "HTTP/1.1 500 Internal Server Error" + "\r\n";
+		}
+		
 		if (statusCode == 200) {
 			statusLine = "HTTP/1.1 200 OK" + "\r\n";
 		}
